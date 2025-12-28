@@ -15,7 +15,8 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 fun SaveButton(
     modifier: Modifier = Modifier,
-    onSave: () -> Unit
+    onSave: () -> Unit,
+    enabled: Boolean
 ) {
     Button(
         modifier = modifier,
