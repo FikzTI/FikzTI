@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier.home.presentation.components
+package org.chevalierlabsas.Kashier.home.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

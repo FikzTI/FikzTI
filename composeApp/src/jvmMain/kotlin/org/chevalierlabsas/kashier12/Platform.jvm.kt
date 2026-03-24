@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier
+package org.chevalierlabsas.kashier12
 
 class JVMPlatform: Platform {
     override val name: String = "Java ${System.getProperty("java.version")}"

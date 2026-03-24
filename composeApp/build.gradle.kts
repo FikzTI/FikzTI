@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -15,7 +16,7 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    
+
     listOf(
         iosArm64(),
         iosSimulatorArm64()
@@ -25,9 +26,9 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     jvm()
-    
+
     sourceSets {
         androidMain.dependencies {
             implementation(compose.preview)
@@ -41,8 +42,15 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(compose.materialIconsExtended)
+
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.navigation.compose)
+
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -55,7 +63,8 @@ kotlin {
 }
 
 android {
-    namespace = "org.chevalierlabsas.kashier"
+    namespace = "org.chevalierlabsas.kashier12"
+    // Gradle otomatis mengubah strip (-) menjadi titik (.)
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {

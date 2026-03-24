@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier.home.presentation.components
+package org.chevalierlabsas.Kashier.home.components
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button

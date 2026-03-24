@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier.home.presentation.components
+package org.chevalierlabsas.Kashier.home.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit

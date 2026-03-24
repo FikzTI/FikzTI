@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier.home.domain
+package org.chevalierlabsas.Kashier.history.domain
 
 data class Item(
     val id: Int,

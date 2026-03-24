@@ -1,4 +1,4 @@
-package org.chevalierlabsas.kashier.home.presentation.components
+package org.chevalierlabsas.Kashier.home.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.chevalierlabsas.kashier.home.domain.Item
+import org.chevalierlabsas.Kashier.history.domain.Item
 
 @Composable
 fun ItemCard(
