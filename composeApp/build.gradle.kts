@@ -33,6 +33,9 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.koin.android)
+            implementation(libs.koin.androidx.compose)
+
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -50,9 +53,13 @@ kotlin {
             implementation(libs.navigation.compose)
 
             implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+            implementation(libs.koin.compose.viewmodel)
+            api(libs.koin.core)
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
 
         }
         commonTest.dependencies {
+            implementation(libs.kotlin.test)
             implementation(libs.kotlin.test)
         }
         jvmMain.dependencies {

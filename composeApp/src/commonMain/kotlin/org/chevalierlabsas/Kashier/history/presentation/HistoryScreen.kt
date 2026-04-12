@@ -1,8 +1,12 @@
+@file:OptIn(ExperimentalTime::class)
+
 package org.chevalierlabsas.Kashier.history.presentation
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -11,9 +15,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -26,12 +32,11 @@ import androidx.compose.ui.unit.dp
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.todayIn
-import org.chevalierlabsas.Kashier.history.data.HistoryDummyDataSource
 import org.chevalierlabsas.Kashier.history.domain.TransactionHistory
 import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
 
-@OptIn(ExperimentalTime::class)
+
 fun getTimeRangeLabel(dateString: String): String {
     return try {
         val transactionDate = LocalDate.parse(dateString)
@@ -41,48 +46,31 @@ fun getTimeRangeLabel(dateString: String): String {
         when {
             diff <= 0 -> "Hari Ini"
             diff in 1..7 -> "Minggu Ini"
+            // Pengecekan bulan dan tahun yang sama
             transactionDate.month == today.month && transactionDate.year == today.year -> "Bulan Ini"
             else -> "Riwayat Lama"
         }
-    } catch (e: Exception) { "Lainnya" }
+    } catch (e: Exception) {
+        "Lainnya"
+    }
 }
 
-fun formatIndonesianDate(dateString: String): String {
-    return try {
-        val date = LocalDate.parse(dateString)
-        val bulan = listOf("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
-        "${date.dayOfMonth} ${bulan[date.monthNumber - 1]} ${date.year}"
-    } catch (e: Exception) { dateString }
-}
-
-fun formatRupiah(value: Double): String {
-    val text = value.toLong().toString().reversed().chunked(3).joinToString(".").reversed()
-    return "Rp $text"
-}
+fun formatRupiah(value: Double): String = "Rp ${value.toLong()}"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HistoryScreen(onNavigateBack: () -> Unit) {
-    val rawData = remember { HistoryDummyDataSource().getHistoryData() }
-
-    val groupedData = remember(rawData) {
-        rawData
-            .groupBy { getTimeRangeLabel(it.tanggal) }
-            .toList()
-            .sortedBy { pair ->
-                when (pair.first) {
-                    "Hari Ini" -> 0
-                    "Minggu Ini" -> 1
-                    "Bulan Ini" -> 2
-                    else -> 3
-                }
-            }
+fun HistoryScreen(
+    state: HistoryState,
+    onNavigateBack: () -> Unit
+) {
+    val groupedData = remember(state.items) {
+        state.items.groupBy { getTimeRangeLabel(it.tanggal) }.toList()
     }
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Riwayat Transaksi", fontWeight = FontWeight.Bold) },
+                title = { Text("Riwayat Transaksi") },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -91,13 +79,19 @@ fun HistoryScreen(onNavigateBack: () -> Unit) {
             )
         }
     ) { padding ->
-        LazyColumn(modifier = Modifier.padding(padding).padding(horizontal = 16.dp)) {
-            groupedData.forEach { (header, items) ->
-                item {
-                    Text(header, fontWeight = FontWeight.Bold, modifier = Modifier.padding(vertical = 12.dp))
-                }
-                items(items) { data ->
-                    HistoryCard(data)
+        if (state.isLoading) {
+            Box(Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {
+                CircularProgressIndicator()
+            }
+        } else {
+            LazyColumn(modifier = Modifier.padding(padding).padding(horizontal = 16.dp)) {
+                groupedData.forEach { (header, items) ->
+                    item {
+                        Text(header, fontWeight = FontWeight.Bold, modifier = Modifier.padding(vertical = 8.dp))
+                    }
+                    items(items) { data ->
+                        HistoryCard(data)
+                    }
                 }
             }
         }
@@ -110,19 +104,12 @@ fun HistoryCard(data: TransactionHistory) {
         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
         colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5))
     ) {
-        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Column(modifier = Modifier.padding(16.dp)) {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text("Total Harga")
+                Text("Total")
                 Text(formatRupiah(data.totalHarga), fontWeight = FontWeight.Bold)
             }
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text("Total Barang")
-                Text("${data.totalBarang} Item")
-            }
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text("Tanggal")
-                Text(formatIndonesianDate(data.tanggal), color = Color.Gray)
-            }
+            Text("${data.totalBarang} Item", style = MaterialTheme.typography.bodySmall)
         }
     }
 }
