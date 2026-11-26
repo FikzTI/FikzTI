@@ -23,8 +23,8 @@ jobs:
           MAX_REPOS: 250
       - name: Commit & Push
         run: |
-          git config --global user.name "FikzTI"
-          git config --global user.email "FikzTI@://github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@://github.com"
           git add -A .
           git commit -m "GitHub 3D Profile" || exit 0
           git push

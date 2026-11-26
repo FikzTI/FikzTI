@@ -68,6 +68,7 @@ web programming, and database management.
 <img src="https://vercel.app" alt="GitHub Trophies" width="100%" />
 </div>
 
+
 <!-- ============================================== -->
 <!-- 05. LANGUAGES AND TOOLS                        -->
 <!-- ============================================== -->
@@ -283,6 +284,7 @@ HTML                     1 repo              ████░░░░░░░�
 <img src="https://githubusercontent.com" alt="GitHub Contribution Snake Animation" width="100%" />
 </picture>
 </div>
+
 
 <!-- ============================================== -->
 <!-- 14. CONNECT WITH ME                            -->
