@@ -6,7 +6,7 @@
 <div align="center">
 
   <img
-    src="./img/github-header-banner.png"
+    src="https://vercel.app"
     width="100%"
     alt="Fikrii Abdillah Khoiristi Banner"
   />
@@ -15,18 +15,12 @@
     Hello, &lt;coders/&gt;! 👋
   </h1>
 
-  <h2>I'm Fikrii Abdillah Khoiristi</h2>
-
-  <h3>
-    Informatics Student | Aspiring Cybersecurity Professional
-  </h3>
-
   <p>
-    Exploring Cybersecurity, Data Analytics,
-    and Software Development.
+    Exploring Cybersecurity, Data Analytics, and Software Development.
   </p>
 
 </div>
+
 
 <!-- ============================================== -->
 <!-- 02. PROFILE INFORMATION                        -->
@@ -85,14 +79,13 @@ web programming, and database management.
 <div align="center">
 
   <img
-    src="https://github-profile-trophy.vercel.app/?username=FikzTI&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6"
+    src="https://vercel.app"
     alt="GitHub Trophies"
     width="100%"
   />
 
 </div>
 
----
 
 <!-- ============================================== -->
 <!-- 05. LANGUAGES AND TOOLS                        -->
@@ -273,30 +266,13 @@ will be added as the project progresses.
 ## 🐍 GitHub Contribution Activity
 
 <div align="center">
-
-  <picture>
-
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/FikzTI/FikzTI/output/github-snake-dark.svg"
-    />
-
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/FikzTI/FikzTI/output/github-snake.svg"
-    />
-
-    <img
-      src="https://raw.githubusercontent.com/FikzTI/FikzTI/output/github-snake.svg"
-      alt="GitHub Contribution Snake Animation"
-      width="100%"
-    />
-
-  </picture>
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com" />
+  <source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com" />
+  <img src="https://githubusercontent.com" alt="GitHub Contribution Snake Animation" width="100%" />
+</picture>
 </div>
 
----
 
 <!-- ============================================== -->
 <!-- 14. CONNECT WITH ME                            -->
