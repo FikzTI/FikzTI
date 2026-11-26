@@ -225,6 +225,32 @@ will be added as the project progresses.
 ## ⏱️ WakaTime Coding Activity
 
 <!--START_SECTION:waka-->
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-517.30%20thousand%20lines%20of%20code-blue?style=flat)
+
+**🐱 My GitHub Data** 
+
+> 📦 1 Byte Used in GitHub's Storage 
+ > 
+> 🏆 5 Contributions in the Year 2026
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 1 Public Repository 
+ > 
+> 🔑 0 Private Repository 
+ > 
+**I Mostly Code in PHP** 
+
+```text
+PHP                      3 repos             ████████████░░░░░░░░░░░░░   50.00 % 
+Blade                    2 repos             ████████░░░░░░░░░░░░░░░░░   33.33 % 
+HTML                     1 repo              ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
+```
+
+
+
+
+ Last Updated on 26/11/2026 17:07:14 UTC
 <!--END_SECTION:waka-->
 
 ---
