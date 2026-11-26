@@ -1,26 +1,14 @@
-
 <!-- ============================================== -->
 <!-- 01. HEADER                                     -->
 <!-- ============================================== -->
 
 <div align="center">
+<img src="https://vercel.app" width="100%" alt="Fikrii Abdillah Khoiristi Banner" />
 
-  <img
-    src="https://vercel.app"
-    width="100%"
-    alt="Fikrii Abdillah Khoiristi Banner"
-  />
+<h1>Hello, &lt;coders/&gt;! 👋</h1>
 
-  <h1>
-    Hello, &lt;coders/&gt;! 👋
-  </h1>
-
-  <p>
-    Exploring Cybersecurity, Data Analytics, and Software Development.
-  </p>
-
+<p>Exploring Cybersecurity, Data Analytics, and Software Development.</p>
 </div>
-
 
 <!-- ============================================== -->
 <!-- 02. PROFILE INFORMATION                        -->
@@ -77,15 +65,8 @@ web programming, and database management.
 ## 🏆 GitHub Achievements
 
 <div align="center">
-
-  <img
-    src="https://vercel.app"
-    alt="GitHub Trophies"
-    width="100%"
-  />
-
+<img src="https://vercel.app" alt="GitHub Trophies" width="100%" />
 </div>
-
 
 <!-- ============================================== -->
 <!-- 05. LANGUAGES AND TOOLS                        -->
@@ -289,16 +270,19 @@ HTML                     1 repo              ████░░░░░░░�
 <!-- 13. CONTRIBUTION SNAKE                          -->
 <!-- ============================================== -->
 
+<!-- ============================================== -->
+<!-- 13. CONTRIBUTION SNAKE                          -->
+<!-- ============================================== -->
+
 ## 🐍 GitHub Contribution Activity
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com" />
-  <source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com" />
-  <img src="https://githubusercontent.com" alt="GitHub Contribution Snake Animation" width="100%" />
+<source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com" />
+<source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com" />
+<img src="https://githubusercontent.com" alt="GitHub Contribution Snake Animation" width="100%" />
 </picture>
 </div>
-
 
 <!-- ============================================== -->
 <!-- 14. CONNECT WITH ME                            -->
