@@ -207,13 +207,15 @@ will be added as the project progresses.
 ## ⏱️ WakaTime Coding Activity
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
+
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-517.30%20thousand%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 1 Byte Used in GitHub's Storage 
+> 📦 2.4 kB Used in GitHub's Storage 
  > 
-> 🏆 5 Contributions in the Year 2026
+> 🏆 11 Contributions in the Year 2026
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -221,6 +223,51 @@ will be added as the project progresses.
  > 
 > 🔑 0 Private Repository 
  > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                47 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.03 % 
+🌆 Daytime                195 commits         ██████████████████░░░░░░░   70.65 % 
+🌃 Evening                30 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.87 % 
+🌙 Night                  4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.45 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.72 % 
+Tuesday                  2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.72 % 
+Wednesday                4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.45 % 
+Thursday                 123 commits         ███████████░░░░░░░░░░░░░░   44.57 % 
+Friday                   105 commits         ██████████░░░░░░░░░░░░░░░   38.04 % 
+Saturday                 8 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.90 % 
+Sunday                   32 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.59 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Jakarta
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+🤖 **AI Coding This Week** 
+
+```text
+No AI Coding Activity Tracked This Week
+```
+
 **I Mostly Code in PHP** 
 
 ```text
@@ -232,7 +279,7 @@ HTML                     1 repo              ████░░░░░░░�
 
 
 
- Last Updated on 26/11/2026 17:07:14 UTC
+ Last Updated on 27/11/2026 08:42:19 UTC
 <!--END_SECTION:waka-->
 
 ---
