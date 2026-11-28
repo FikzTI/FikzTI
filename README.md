@@ -209,38 +209,38 @@ will be added as the project progresses.
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-614.47%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-609.77%20thousand%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 2.4 kB Used in GitHub's Storage 
+> 📦 2.6 kB Used in GitHub's Storage 
  > 
-> 🏆 11 Contributions in the Year 2026
+> 🏆 15 Contributions in the Year 2026
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 1 Public Repository 
+> 📜 2 Public Repositories 
  > 
-> 🔑 0 Private Repository 
+> 🔑 0 Private Repositories 
  > 
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                50 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.56 % 
-🌆 Daytime                214 commits         ██████████████████░░░░░░░   70.86 % 
-🌃 Evening                34 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.26 % 
+🌞 Morning                51 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.89 % 
+🌆 Daytime                212 commits         ██████████████████░░░░░░░   70.20 % 
+🌃 Evening                35 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.59 % 
 🌙 Night                  4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.32 % 
 ```
 📅 **I'm Most Productive on Friday** 
 
 ```text
-Monday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.66 % 
+Monday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Tuesday                  2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.66 % 
 Wednesday                4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.32 % 
-Thursday                 123 commits         ██████████░░░░░░░░░░░░░░░   40.73 % 
-Friday                   128 commits         ███████████░░░░░░░░░░░░░░   42.38 % 
-Saturday                 8 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.65 % 
-Sunday                   35 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.59 % 
+Thursday                 122 commits         ██████████░░░░░░░░░░░░░░░   40.40 % 
+Friday                   129 commits         ███████████░░░░░░░░░░░░░░   42.72 % 
+Saturday                 11 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   03.64 % 
+Sunday                   34 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.26 % 
 ```
 
 
@@ -268,18 +268,18 @@ No Activity Tracked This Week
 No AI Coding Activity Tracked This Week
 ```
 
-**I Mostly Code in PHP** 
+**I Mostly Code in Blade** 
 
 ```text
-PHP                      3 repos             ████████████░░░░░░░░░░░░░   50.00 % 
-Blade                    2 repos             ████████░░░░░░░░░░░░░░░░░   33.33 % 
-HTML                     1 repo              ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
+Blade                    2 repos             ██████████░░░░░░░░░░░░░░░   40.00 % 
+PHP                      2 repos             ██████████░░░░░░░░░░░░░░░   40.00 % 
+HTML                     1 repo              █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
 ```
 
 
 
 
- Last Updated on 27/11/2026 13:14:26 UTC
+ Last Updated on 28/11/2026 07:56:25 UTC
 <!--END_SECTION:waka-->
 
 ---
